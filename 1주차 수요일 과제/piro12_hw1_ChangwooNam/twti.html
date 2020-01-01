@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>트위터, 지금 일어나고 있는 일입니다.</title>
+
+    <style>
+        * {margin: 0; padding:0;}
+        a { text-decoration: none;}
+        li{ list-style: none; text-decoration: none }
+
+        
+        section {position: fixed; top:0; bottom:40px; overflow:hidden; width:100%; }
+        section #section1 {float:left; height:100%; width:50%; background-image: url(background_image.png);
+                            color: white; font-size:18px; font-weight: bold; }
+        section #section1 { display: table; } 
+        section #section1 .section1_con { display: table-cell; vertical-align: middle; padding: 0 10%; }
+        section #section1 .section1_con li{ padding: 3.5%;}
+        
+        /*
+        section #section2 { overflow: hidden; }
+        section #section2 .login { position:fixed; top:o; right:0; }
+        section #section2 .login li { display: inline-block; padding: 1%;}
+        */
+
+        section #section2 {float:left; height:100%; width:50%; }
+
+        section #section2 { display: table; } 
+        section #section2 .checkin { display: table-cell; vertical-align: middle; padding: 0 25%; font-size: 1.1em; }
+        section #section2 .checkin li{ margin: 5%}
+        section #section2 .checkin li:nth-child(2){ margin-bottom: 10%;}
+        section #section2 .checkin li:nth-child(3){font-weight: bold;}
+        section #section2 .checkin li:nth-child(4){ background-color:  #1290df; border-radius: 100px; text-align:center;
+                                                    font-weight: bold;}
+        section #section2 .checkin li:nth-child(4) a{ color:white; padding: 0 20%;}
+
+        section #section2 .checkin li:nth-child(5){ border: 1px solid #1290df; border-radius: 100px; text-align:center;
+                                                    font-weight: bold; }
+        section #section2 .checkin li:nth-child(5) a{ color: #1290df; padding: 0 20%;}
+        
+        footer{ position:fixed; bottom:0; width: 100%; height: 40px; box-sizing:border-box; border: 1px solid gray; }
+        footer ul { margin: 0 5%;}
+        footer ul li { display:inline-block; color:gray; line-height: 40px; text-align: center; font-size:0.7em; padding: 0 1%}
+        footer ul::after{content: ''; width: 100%; display: inline-block;}
+        footer ul li a { color: gray;}
+        footer ul li a:hover { text-decoration: underline;}
+
+
+
+    </style>
+</head>
+<body>
+   <section>
+       <div id="section1">
+           <div class="section1_con">
+                <ul>
+                    <li><img src="search_icon.png" width="40" />관심사를 팔로우하세요.</li>
+                    <li><img src="talk_icon.png" width="40" />사람들이 이야기하고 있는 주제에 대해 알아보세요.</li>
+                    <li><img src="sns_icon.png" width="40" />대화에 참여하세요.</li>
+                </ul>
+           </div>
+       </div >
+
+       <div id="section2">
+           <div class="checkin">
+               <ul>
+                   <li><img src="bird_icon.png" width="45"/></li>
+                   <li><h1>지금 세계 곳곳에서 무슨 일이 일어나고 있는지 확인하세요.</h1></li>
+                   <li><p>지금 트위터에 가입하세요.</p></li>
+                   <li><a href="https://twitter.com/signup">가입하기</a></li>
+                   <li><a href="https://twitter.com/login">로그인</a></li>
+               </ul>
+           </div>
+       </div>
+    </section>
+
+   <footer>
+        <ul>
+            <li><a href="https://about.twitter.com/ko.html">회사소개</a></li>
+            <li><a href="https://help.twitter.com/ko?lang=browser">고객센터</a></li>
+            <li><a href="https://blog.twitter.com/korea">블로그</a></li>
+            <li><a href="http://status.twitter.com/">시스템 현황</a></li>
+            <li><a href="https://about.twitter.com/careers">인재채용</a></li>
+            <li><a href="https://twitter.com/tos">개인정보 처리방침</a></li>
+            <li><a href="https://support.twitter.com/articles/20170514">쿠키</a></li>
+            <li><a href="https://business.twitter.com/en/help/troubleshooting/how-twitter-ads-work.html">광고 정보</a></li>
+            <li><a href="https://about.twitter.com/press/brand-assets">브랜드</a></li>
+            <li><a href="https://about.twitter.com/products">애플리케이션</a></li>
+            <li><a href="https://ads.twitter.com/?ref=gl-tw-tw-twitter-advertise">광고</a></li>
+            <li><a href="https://marketing.twitter.com/">마케팅</a></li>
+            <li><a href="https://business.twitter.com/">비즈니스</a></li>
+            <li><a href="https://dev.twitter.com/">개발자</a></li>
+            <li><a href="https://twitter.com/i/directory/profiles">디렉토리</a></li>
+            <li><a href="https://twitter.com/settings/personalization">설정</a></li>
+            <li>© 2020 Twitter</li>
+        </ul>
+
+   </footer>
+</body>
+</html>
