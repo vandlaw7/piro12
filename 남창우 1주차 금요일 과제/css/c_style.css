@@ -1,0 +1,213 @@
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.c_container {
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+}
+.c_TitleBlock {
+    width: 100%;
+    margin: 0 auto;
+}
+.c_title {
+    width: 100%;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    color: #413e66
+}
+.c_subtitle {
+    width: 50%;
+    line-height: 28px;
+    margin: 2% auto 0;
+    font-size: 15px;
+    text-align: center;
+    color: #535074
+}
+.c_ContentBlock {
+    width: 100%;
+    margin: 5% auto;
+}
+
+/*======================여기부터 서비스===========================*/
+
+#SERVICE {
+    width: 100%;
+    padding: 60px 0 20px 0;
+    background: #f5f8fd;
+}
+#SERVICE .c_ContentBlock {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#SERVICE .c_ContentBlock .c_box {
+    width: 350px;
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 0 1.5% 30px;
+    background: white;
+    box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+    text-align: center;
+    transition-duration: 0.5s;
+}
+#SERVICE .c_ContentBlock .c_box:hover { transform: scale(1.1); }
+#SERVICE .c_ContentBlock .c_box:hover > div:nth-child(2) > a { color: #1bb1dc; }
+#SERVICE .c_ContentBlock .c_box a {
+    color: black;
+    text-decoration: none;
+}
+#SERVICE .c_ContentBlock .c_cir {
+    margin: 0 auto 15px;
+    padding-top: 12px;
+    display: inline-block;
+    width: 60px; height: 60px;
+    border-radius: 100px;
+}
+#SERVICE .c_ContentBlock .c_box:nth-child(1) .c_cir { background: #fceef3 }
+#SERVICE .c_ContentBlock .c_box:nth-child(2) .c_cir { background: #fff0da }
+#SERVICE .c_ContentBlock .c_box:nth-child(3) .c_cir { background: #e6fdfc }
+#SERVICE .c_ContentBlock .c_box:nth-child(4) .c_cir { background: #eafde7 }
+#SERVICE .c_ContentBlock .c_box:nth-child(5) .c_cir { background: #e1eeff }
+#SERVICE .c_ContentBlock .c_box:nth-child(6) .c_cir { background: #ecebff }
+
+#SERVICE .c_ContentBlock .c_box img { width: 57%; }
+
+#SERVICE .c_ContentBlock .c_title {
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+#SERVICE .c_ContentBlock .c_content {
+    width: 100%;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: left;
+}
+
+/*===================여기부터 와이 추즈==================*/
+
+#WHY-CHOOSE-US {
+    width: 100%;
+    padding: 60px 0 40px 0;
+    background: white;
+}
+#WHY-CHOOSE-US .c_section1 .c_img-side {
+    position: relative;
+    width: 100%;
+}
+#WHY-CHOOSE-US .c_section1 .c_content-side {
+    position: relative;
+    width: 100%;
+}
+@media screen and (min-width: 1000px ) {
+    #WHY-CHOOSE-US .c_section1 {
+        width: 100%;
+        display: flex;
+    }
+    #WHY-CHOOSE-US .c_section1 .c_img-side {
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding-right: 20px;
+    }
+    #WHY-CHOOSE-US .c_section1 .c_content-side {
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding-left: 20px;
+    }
+}
+@media screen and (max-width: 1000px ) {
+    #WHY-CHOOSE-US .c_section1 .c_content-side { padding-top: 30px; }
+}
+#WHY-CHOOSE-US .c_section1 .c_img-side img { width: 100%; }
+#WHY-CHOOSE-US .c_section1 .c_content { margin-bottom: 30px; }
+
+#WHY-CHOOSE-US .c_section1 .c_list { display: flex; }
+#WHY-CHOOSE-US .c_list .c_title {
+    margin: 0 0 5px 10px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 24px;
+    color: #413e66;
+}
+#WHY-CHOOSE-US .c_list .c_content {
+     margin-left: 10px;
+    text-align: left;
+    margin-bottom: 30px;
+    color: #555186;
+}
+#WHY-CHOOSE-US .c_section2 {
+    width: 100%;
+    padding-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#WHY-CHOOSE-US .c_section2 .c_block { text-align: center!important; }
+#WHY-CHOOSE-US .c_section2 .c_big-latter {
+    font-weight: bold;
+    font-size: 48px;
+    color: #555186;
+}
+#WHY-CHOOSE-US .c_section2 .c_small-latter {
+    font-size: 14px;
+    color: #8a87b6;
+}
+
+/*============여기부터 콜 투 액션================*/
+
+#CALL-TO-ACTION {
+    width: 100%;
+    padding: 40px 0;
+    background: #2d2b46;
+}
+#CALL-TO-ACTION .c_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#CALL-TO-ACTION .c_text {
+    padding: 0 15px;
+    flex: 0 0 75%;
+}
+#CALL-TO-ACTION .c_title {
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+}
+#CALL-TO-ACTION .c_content {
+    margin-bottom: 30px;
+    line-height: 28px;
+    color: white;
+}
+#CALL-TO-ACTION .c_button {
+    display: flex;
+    align-items: center;
+}
+#CALL-TO-ACTION .c_button a {
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 26px;
+    border-radius: 3px;
+    margin: 10px;
+    border: 3px solid white;
+    color: white;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+#CALL-TO-ACTION .c_button a:hover {
+    background: #1bb1dc;
+    border: 3px solid #1bb1dc;
+}

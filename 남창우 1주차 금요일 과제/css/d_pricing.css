@@ -1,0 +1,114 @@
+       #pricing {
+            text-align: center;
+            padding: 50px 0;
+
+        }
+
+        #pricing-wrap {
+            width: 80%;
+            display: inline-block;
+        }
+
+        #pricing #pricing-intro .d_title {
+            margin-bottom: 1%;
+            text-align: center;
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+
+        #pricing #pricing-intro .d_content {
+            margin-bottom: 3%;
+            text-align: center;
+            color: #686363;
+            font-size: 0.9em;
+        }
+
+        #pricing #pricing-choose {
+            display: inline-block;
+            height: 50vh;
+            width: 100%;
+        }
+
+        #pricing #pricing-choose .d_choose {
+            width: 26%;
+            height: 100%;
+            margin: 0 1%;
+            display: inline-block;
+            text-align: center;
+            background-color: #ffffff;
+            border-bottom: 4px solid #c0c0c0;
+            overflow: hidden;
+        }
+
+
+        #pricing #pricing-choose .d_choose .price {
+            margin-top: 10%;
+        }
+
+        #pricing #pricing-choose .d_choose .tier {
+            font-size: 1.7em;
+            padding: 0.7em;
+        }
+
+        #pricing #pricing-choose .d_choose .explain {
+            font-size: 0.8em;
+            padding: 0.5em 0;
+
+        }
+
+        #pricing #pricing-choose .d_choose .payment {
+            display: inline-block;
+            background-color: #1bb1dc;
+            width: 40%;
+            font-size: 1.0em;
+            color: #ffffff;
+            border-radius: 5px;
+            margin: 10% 0;
+            padding: 3%;
+        }
+
+        #pricing #pricing-choose .d_choose .topline {
+            height: 7px;
+            background-color: #168aaa;
+            position: relative;
+            top: -100%;
+            left: -100%;
+            display: none;
+        }
+
+        .digit {
+            font-size: 1.2em;
+            position: relative;
+            top: -0.8em;
+        }
+
+        .salary {
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+
+        #pricing #pricing-choose .d_choose .payment:hover {
+            background-color: #168aaa;
+        }
+
+        #pricing #pricing-wrap #pricing-choose .d_choose:hover {
+            transition-duration: 1s;
+            transform: scale(1.1);
+            box-shadow: 5px 5px 5px 5px #afafaf;
+        }
+
+        #pricing #pricing-wrap #pricing-choose .d_choose:hover>.topline {
+            display: block;
+            animation-name: location;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes location {
+            from {}
+
+            to {
+                left: 0;
+            }
+        }
+

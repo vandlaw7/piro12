@@ -1,0 +1,101 @@
+      #B_WRAP * {
+        box-sizing: border-box;
+      }
+
+      .B_1wrap, .B_2wrap {
+            width: 100vw; height: auto;
+        }
+        .B_1up, .B_1down {
+            width: 80%; height: auto;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .B_upcon1, .B_upcon2, .B_downcon1, .B_downcon2 {
+            width: 50%; height: auto;
+            float: left;
+            text-align: left;
+        }
+        .B_upcon1 img, .B_downcon2 img {
+            width: 100%; height: auto;
+        }
+        .B_upcon2 {
+          margin-top: 12px;
+          padding-left: 20px;
+        }
+        .B_downcon1 {
+          margin-top: 20px;
+          padding-right: 20px;
+        }
+        #PORTFOLIO {
+            font-size: 3em;
+            font-weight: bold;
+            text-align: center;
+            padding: 20px;
+        }
+
+
+#css_tabs input:nth-of-type(1), #css_tabs input:nth-of-type(1) ~ div:nth-of-type(1), #css_tabs input:nth-of-type(2), #css_tabs input:nth-of-type(2) ~ div:nth-of-type(2),
+#css_tabs input:nth-of-type(3), #css_tabs input:nth-of-type(3) ~ div:nth-of-type(3), #css_tabs input:nth-of-type(4), #css_tabs input:nth-of-type(4) ~ div:nth-of-type(4) {
+    display:none
+}
+#css_tabs input:nth-of-type(1):checked ~ div:nth-of-type(1), #css_tabs input:nth-of-type(2):checked ~ div:nth-of-type(2),
+#css_tabs input:nth-of-type(3):checked ~ div:nth-of-type(3), #css_tabs input:nth-of-type(4):checked ~ div:nth-of-type(4){
+    display:block
+}
+#css_tabs > label {
+    display:inline-block;
+    font-variant:small-caps;
+    font-size:1.2em;
+    padding:7px;
+    text-align:center;
+    width:auto;
+    line-height:2.4em;
+    color:black;
+}
+#css_tabs {
+    text-align: center;
+}
+#css_tabs > label:hover {
+    cursor:pointer
+}
+#css_tabs input:nth-of-type(1):checked ~ label:nth-of-type(1), #css_tabs > label[for=tab1]:hover {
+    color: darkturquoise;
+}
+#css_tabs input:nth-of-type(2):checked ~ label:nth-of-type(2), #css_tabs > label[for=tab2]:hover {
+    color: darkturquoise;
+}
+#css_tabs input:nth-of-type(3):checked ~ label:nth-of-type(3), #css_tabs > label[for=tab3]:hover {
+    color: darkturquoise;
+}
+#css_tabs input:nth-of-type(4):checked ~ label:nth-of-type(4), #css_tabs > label[for=tab4]:hover {
+    color: darkturquoise;
+}
+
+
+.B_image {
+    overflow: hidden;
+    display: flex;
+}
+.B_img img {
+    width: 300px; height: auto;
+    margin-bottom: 20px;
+}
+.B_group1, .B_group2, .B_group3 {
+    margin: 5px 0;
+    overflow: hidden;
+}
+.B_group1 {
+    flex: 1;
+    text-align: right;
+}
+.B_group2 {
+    flex: 1;
+    text-align: center;
+}
+.B_group3 {
+    flex: 1;
+    text-align: left;
+}
+.B_img:hover {
+  filter: brightness(40%);
+}

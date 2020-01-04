@@ -1,0 +1,263 @@
+
+
+
+
+    #FAQ{
+        padding: 5% 10% 5% 10%;
+    }
+    #FAQ .E_HeadLine{
+        text-align: center; font-size: 2.5em; font-weight: bold;
+        padding: 10px 0;
+    }
+    #FAQ .E_TextArea{
+        padding: 10px 0;
+        text-align: center; 
+    }
+    #FAQ .E_QList{
+        padding: 5% 10% 5% 10%;
+    }
+    #FAQ .E_QList li{
+        list-style: none;
+        margin: 10px 0 0;
+        font-size: 1.8em;
+        color: red;
+
+    }
+    #FAQ .E_QList li{
+        text-decoration: none; color: black;
+
+    }
+    #FAQ .E_QList li span{
+        float: right;
+        margin: 0 10px 0 0;
+    }
+    .E_Question1, .E_Question2, .E_Question3, .E_Question4, .E_Question5 {
+        display:block;
+        background-color: white; color: black;
+        cursor: pointer;
+        border-bottom: 1px solid grey;
+        }
+
+    .E_Answer1, .E_Answer2, .E_Answer3, .E_Answer4, .E_Answer5 {
+        animation-name: tglAre;
+        animation-duration: 2s;
+        display:none;
+        height: 10vh;
+        background-color: white;
+        overflow: hidden;
+        font-size: 0.8em;
+    }
+
+    .E_Opener1, .E_Opener2, .E_Opener3, .E_Opener4, .E_Opener5 {       display:none; 
+    }
+
+
+
+    @keyframes tglA{
+        from{
+            height: 0;
+        }
+        to{
+        }
+    }
+
+
+    .E_Opener1:checked ~ .E_Answer1 {
+        display:block;
+        animation-name: tglA;
+        animation-duration: 2s;
+    }
+
+
+
+    .E_Opener2:checked ~ .E_Answer2 {
+        display:block;
+        animation-name: tglA;
+        animation-duration: 2s;            
+    }
+
+    .E_Opener3:checked ~ .E_Answer3 { 
+        display:block; 
+        animation-name: tglA;
+        animation-duration: 2s;
+    }
+
+    .E_Opener4:checked ~ .E_Answer4 { 
+        display:block;
+        animation-name: tglA;
+        animation-duration: 2s; 
+    }
+
+    .E_Opener5:checked ~ .E_Answer5 { 
+        display:block;
+        animation-name: tglA;
+        animation-duration: 2s; 
+    }
+
+
+
+
+
+    .E_SectionBox{
+        display: flex;
+        padding: 5% 10% 5% 10%;
+
+    }
+
+    #FOOTER{
+        background-color: #f5f8fd
+    }
+
+    #FOOTER .E_SectionBox .E_section1 .E_section1Dw .E_HeadLine, #FOOTER .E_SectionBox .E_section2 .E_section2Up .E_HeadLine, #FOOTER .E_SectionBox .E_section2 .E_section2Dw .E_HeadLine, #FOOTER .E_SectionBox .E_section3 .E_HeadLine{
+        font-weight: bold;
+    }
+    .E_section1{ 
+        flex:2;
+        display: flex; flex-direction: column;
+        padding: 0 10px 0 0;
+    }
+    .E_section1 div{
+        margin: 0 0 30px 0;
+    }
+
+    .E_section1Up{
+        flex: 5;
+    }
+    .E_section1Up .E_HeadLine{
+        font-size: 1.7em;
+    }
+
+    .E_section1Dw{
+        flex: 4;
+    }        
+    .E_section1F{
+        flex: 1;
+        display:flex; flex-direction: row;
+    }
+    .E_section1F input{
+        flex: 1;
+        height: 30px;
+        margin: 0; padding: 0;
+        box-sizing: border-box;
+    }
+    .E_section1F button{
+        flex:1;
+        display: inline-block;
+        height: 30px;
+        margin: 0 15px 0 0; padding: 0;
+        color: white;
+        background-color: rgb(24, 173, 216);
+        border: 1px solid rgb(24, 173, 216);
+
+    }
+    .E_section1F button:hover {
+        background-color: rgb(14, 158, 198);
+        cursor: pointer;
+    }
+
+
+
+    .E_section2{
+        flex:2;
+        display: flex; flex-direction: column;
+        padding: 0 10px; 
+    }
+
+    .E_section2 div{
+        margin: 0 0 10px;
+    }
+
+    .E_section2Up{
+        flex: 5; 
+    }
+    .E_section2Up .E_TextArea li{
+         list-style: none;
+        margin: 10px 0;
+    }
+    .E_section2Up .E_TextArea li a{
+        text-decoration: none;
+        color: #696592;
+        transition: color 0.5s ease;
+    }
+
+
+    .E_section2Up .E_TextArea li a:hover{
+        color: rgb(24, 173, 216);
+
+    }
+    .E_section2Dw{
+        flex: 3;
+    }
+    .E_section2Dw .E_TextArea span {
+        font-weight: bold;
+        font-size: 1.1em;
+    }
+    .E_section2F{
+        flex: 1;
+        margin: 0; padding: 0;
+    }
+    .E_section2F ul{
+        list-style: none;
+
+    }
+    .E_section2F ul li{
+        display: inline-block;
+    }
+    .E_section2F ul li button{
+        border: 0;  border-radius: 100px;
+        width: 40px; height: 40px;
+        background-color: rgb(24, 173, 216);
+        cursor: pointer;
+    }
+    .E_section2F ul li button:hover{
+        background-color: rgb(14, 158, 198);
+        cursor:pointer;
+    }
+    .E_section2F ul li button img{
+        width: 20px; height: 20px;
+    }
+    .E_section3{
+        flex:4;
+
+        padding: 0 0 0 10px;
+    }
+    .E_section3 .E_InputList{
+        display: flex; flex-direction: column;
+    }
+    .E_section3 .E_HeadLine, .E_section3 .E_TextArea{
+        margin: 0 0 20px;
+    }
+
+    .E_FormBox{
+        flex: 2;
+    }
+    .E_FormBox form input{
+        display: block;
+        width: 100%; height: 20px;
+        margin: 15px 0;
+    }
+    .E_FormBox form textarea{
+        width: 100%; height: 150px;
+        border: 1px solid lightgrey;
+
+    }
+    .E_Button{
+        text-align: center;
+    }
+    .E_Button button{
+        width: 150px; height: 35px;
+        color: white; font-size: 0.8em;
+        border: 1px solid rgb(24, 173, 216);
+        border-radius: 5px;
+        background-color: rgb(24, 173, 216);
+    }
+    .E_Button button:hover {
+        background-color: rgb(14, 158, 198);
+        cursor: pointer;
+    }
+
+
+    #COPYRIGHT{
+        text-align: center;
+        font-size: 0.8em;
+    }

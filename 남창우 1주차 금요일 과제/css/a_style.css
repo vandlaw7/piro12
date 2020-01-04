@@ -1,0 +1,72 @@
+* {margin: 0; padding: 0;}
+a {text-decoration: none; color: black;}
+div {border: 0px solid gray; box-sizing: border-box;}
+
+img {width: 5%;}
+.a_topbar img {width:30px; height:30px;}
+
+.a_header { width:100vw; position:fixed; height: 85px; background-color: white;
+            z-index:9999999;} 
+.a_topbar { width:90%; }
+#a_container1 { width:100%; margin: 10px 10%;}
+.a_social-media { width: 20%; margin: 0 0 0 80%; font-size:0;}
+.a_social-media div {width: 25%; display: inline-block; }
+
+.a_mainbar {width:90%; overflow: hidden; margin: 0 5%; height:50px; }
+.a_mainlogo { float: left; width:10%; margin: 0 5% 0 0;; 
+            font-size: 30px; line-height: 50px;}
+.a_gnb { float: right; width: 85%; overflow: hidden; margin: auto 0; 
+        line-height: 50px; transition: color 1s ease;}
+.a_gnb div { float:right; font-size: 15px; margin:0 2%;}
+
+.a_gnb a:hover { color:rgb(24,173,216)}
+
+/*.a_gradation_bar{ height: 5px; background: linear-gradient(to bottom, gray, white )} */
+
+
+.a_intro { top: 85px; width:100vw;}
+.a_buffer{ height:80px;}
+#a_container2 { width:80%; margin: 0 auto;}
+.a_intro_row { margin: 100px 0; height:700px; overflow: hidden;}
+.a_intro_row > div { float: left; width:50%; height: 700px;}
+.a_intro_row img{ width:10%;}
+.a_intro img {width:100%; height:100% ;}
+
+.a_intro_col1 { display:table;}
+.a_intro_comments { display:table-cell; vertical-align: middle; }
+.a_intro_comments_container { width: 80%; margin: 0 10%;}
+.a_intro_comments { font-size: 4em;}
+.a_intro_comments_container  button {font-size: 0.4em; background-color:rgb(24, 173, 216); 
+                                    border-radius: 5px; border: 1px solid white;}
+.a_intro_comments_container  button a {  color: white; }
+.a_intro_comments_container button:hover{ background-color: rgb(14,158,198); }
+
+
+.a_aboutus {width:100vw;}
+#a_container3 { width: 80%; margin: 0 auto; }
+.a_aboutus_row { margin: 60px 0; height:700px; overflow: hidden;}
+.a_aboutus_row > div {float:left; display:table;}
+
+.a_aboutus_col1 {width:40%;}
+.a_aboutus_col2 {width:60%;}
+
+.a_aboutus_row > div {float:left; text-align: center; height: 700px; display: table}
+.a_aboutus_row > div >div { display:table-cell; vertical-align: middle; }
+
+.a_aboutus_contents_container { width: 80%; margin: 0 10% 0 20%; text-align: left;
+                                font-size:1.4em; color: rgb(24, 173, 216);
+                                font-family: 'Times New Roman', Times, serif}
+
+.a_imagebox img { width: 90%;}
+.a_imagebox img:hover{animation-name: enlargement; animation-duration: 1s; animation-fill-mode: forwards;}
+
+@keyframes enlargement{
+    from{
+        
+    }
+    to{
+        width:95%;
+    }
+}
+
+.a_imagebox img { width: 90%}
